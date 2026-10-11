@@ -32,7 +32,16 @@ body {
 }
 
 .logo-icon {
-    margin-right: 6px;
+ margin-right: 6px;
+    vertical-align: middle;
+}
+.logo-icon svg {
+    vertical-align: -2px;
+      margin-right: 6px;
+    vertical-align: middle;
+    width: 30px; 
+    height: 30px;
+
 }
 
 .arrow {
@@ -123,7 +132,10 @@ body {
     border-radius: 14px;
     margin-bottom: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+     object-fit: cover;
+    display: block;
 }
+
 
 .card-label {
     font-size: 13px;
@@ -143,20 +155,19 @@ body {
 }
 
 .discover-item {
-    display: inline-block;
-    width: 48%;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 1px solid #EAEAEA;
-    padding: 10px 15px;
-    border-radius: 12px;
+    /* display: inline-block; */
+    /* width: 48%; */
+    padding: 8px 12px;
+    color:#0D0D0D;
     margin-right: 2%;
-    margin-bottom: 15px;
-    vertical-align: middle;
+    margin-bottom: 10px;
+    font-size: 12px;
+    /* vertical-align: middle; */
 }
 
-.discover-item-right {
+/* .discover-item-right {
     margin-right: 0;
-}
+} */
 
 .small-thumb {
     display: inline-block;
@@ -193,14 +204,10 @@ body {
     display: inline-block;
 }
 .left-list {
-    display: inline-block;
+    
+    float: left;
     width: 48%;
-    vertical-align: top;
-    margin-right: 2%;
+    margin-right: 4%;
+    
 }
 
-.right-list {
-    display: inline-block;
-    width: 48%;
-    vertical-align: top;
-}
